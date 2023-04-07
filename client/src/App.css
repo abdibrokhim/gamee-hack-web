@@ -1,0 +1,41 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.input-border {
+  border: 1px solid #F3F3F8;
+}
+
+.input-border:hover {
+  border: 1px solid #00897b;
+  box-shadow: 0 0 5px #00897b;
+  transition: 0.3s;
+}
+
+.clear-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 10px;
+}
