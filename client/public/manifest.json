@@ -8,13 +8,13 @@
       "type": "image/x-icon"
     },
     {
-      "src": "gamee192.png",
-      "type": "image/png",
+      "src": "gamee192.jpeg",
+      "type": "image/jpeg",
       "sizes": "192x192"
     },
     {
-      "src": "gamee512.png",
-      "type": "image/png",
+      "src": "gamee512.jpeg",
+      "type": "image/jpeg",
       "sizes": "512x512"
     }
   ],

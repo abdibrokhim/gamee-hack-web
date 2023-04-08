@@ -18,7 +18,7 @@ function App() {
 
 
   const apiUrl = "https://tggameehacker-api.ba-students.uz/api/update_score/";
-  const apiKey = "";
+  const apiKey = ""; // get your api_key -> https://tggameehacker-api.ba-students.uz/docs
 
 
   const handleClose = (event, reason) => {
@@ -47,8 +47,6 @@ function App() {
     );
   };
 
-  // https://prizes.gamee.com/game-bot/kiBJvHa-caba58da853c651867ff4f5d5a2567bf5604beb7#tgShareScoreUrl=tgb%3A%2F%2Fshare_game_score%3Fhash%3DxHDZtNsHehnCzKxYeFIG
-
 
   const onUpdateScoreClick = async () => {
     console.log(gameUrl);
@@ -57,13 +55,12 @@ function App() {
     setLoading(true);
 
     try {
-      const request = `${apiUrl}?api_key=${apiKey}&url=${gameUrl}&score=${gameScore}`;
+      let request = `${apiUrl}?api_key=${apiKey}&score=${gameScore}&url=${gameUrl}`;
       console.log('Request:', request);
 
-      fetch(`${apiUrl}?api_key=${apiKey}&url=${gameUrl}&score=${gameScore}`, 
+      fetch(request, 
         { 
           method: 'POST', 
-          redirect: 'follow',
           headers: {
             'Content-Type': 'application/json',
           },
@@ -139,7 +136,6 @@ function App() {
           className=''
           style={{
             width: '60%',
-            // backgroundColor: '#21252B',
             marginTop: '60px',
             padding: '40px 40px',
             borderRadius: '5px',
